@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Contact - Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Student Portfolio</div>
+    <nav class="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Saya adalah seorang siswa RPL yang tertarik dengan pengembangan web modern.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label>Nama: <input type="text" id="name"></label>
+        <label>Email: <input type="email" id="email"></label>
+        <label>Pesan: <textarea id="message"></textarea></label>
+        <button type="submit">Kirim</button>
+      </form>
+      <div id="formResult"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Student Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
