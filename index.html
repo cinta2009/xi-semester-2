@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio | Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">MyPorto</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><button id="dark-mode-toggle">🌓</button></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">Student Portfolio</div>
+    <nav class="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
 
-    <main>
-        <section class="hero">
-            <h1>Halo, Saya Siswa RPL</h1>
-            <p>Selamat datang di Data Viewer dan Portofolio Interaktif saya.</p>
-        </section>
+  <main>
+    <section id="profile">
+      <h2>Profile</h2>
+      <article>
+        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
+        <p>Halo, saya Cinta. Siswa kelas XI RPL yang sedang belajar web programming.</p>
+      </article>
+    </section>
 
-        <section class="carousel-container">
-            <div class="carousel">
-                <div class="slide">Desain Modern</div>
-                <div class="slide">Koding Bersih</div>
-                <div class="slide">Responsif Layout</div>
-            </div>
-            <div class="carousel-controls">
-                <button onclick="moveSlide(-1)">Prev</button>
-                <button onclick="moveSlide(1)">Next</button>
-            </div>
-        </section>
-    </main>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="assets/images/img1.jpg" alt="Project 1" class="active">
+          <img src="assets/images/img2.jpg" alt="Project 2">
+          <img src="assets/images/img3.jpg" alt="Project 3">
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2026 Student Portfolio Project - XI RPL</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Student Portfolio</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
