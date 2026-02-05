@@ -1,20 +1,23 @@
 [
-    {
-        "id": 1,
-        "tittle": "Project Web E-Commerce",
-        "category": "Web Development",
-        "description": "Membangun toko online sederhana dengan HTML dan CSS."
-    },
-    {
-        "id": 2,
-        "tittle": "Aplikasi Kasir",
-        "cetegory": "Javascript",
-        "description": "Aplikasi penghitung belanja menggunakan logic Javascript."
-    },
-    {
-        "id": 3,
-        "tittle": "Redesign Landing Page",
-        "cetegory":"UI/UX",
-        "description": "Mendesain ulang tampilan website agar lebih user-friendly."
-    }
+  {
+    "id": 1,
+    "title": "Web E-Commerce",
+    "category": "Web",
+    "desc": "Membangun toko online dengan fitur checkout.",
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": 2,
+    "title": "Mobile App UI",
+    "category": "Design",
+    "desc": "Desain antarmuka aplikasi kesehatan.",
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": 3,
+    "title": "Sistem Informasi Sekolah",
+    "category": "Web",
+    "desc": "Manajemen data siswa berbasis web.",
+    "image": "https://via.placeholder.com/300x200"
+  }
 ]
