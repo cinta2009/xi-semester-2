@@ -1,23 +1,28 @@
-[
-  {
-    "id": 1,
-    "title": "Web E-Commerce",
-    "category": "Web",
-    "desc": "Membangun toko online dengan fitur checkout.",
-    "image": "https://via.placeholder.com/300x200"
-  },
-  {
-    "id": 2,
-    "title": "Mobile App UI",
-    "category": "Design",
-    "desc": "Desain antarmuka aplikasi kesehatan.",
-    "image": "https://via.placeholder.com/300x200"
-  },
-  {
-    "id": 3,
-    "title": "Sistem Informasi Sekolah",
-    "category": "Web",
-    "desc": "Manajemen data siswa berbasis web.",
-    "image": "https://via.placeholder.com/300x200"
-  }
-]
+{
+  "projects": [
+    {
+      "title": "Website Portfolio",
+      "desc": "Website pribadi menggunakan HTML, CSS, dan JavaScript untuk menampilkan profil dan karya."
+    },
+    {
+      "title": "Data Viewer",
+      "desc": "Aplikasi sederhana untuk menampilkan data JSON secara dinamis dengan manipulasi DOM."
+    },
+    {
+      "title": "CRUD App",
+      "desc": "Mini project sistem tambah, edit, hapus data menggunakan JavaScript."
+    },
+    {
+      "title": "Responsive Landing Page",
+      "desc": "Desain halaman landing modern dengan Flexbox dan Grid, mobile-friendly."
+    },
+    {
+      "title": "Form Validation Project",
+      "desc": "Form interaktif dengan validasi input dan penyimpanan data ke JSON."
+    },
+    {
+      "title": "Dark Mode Toggle",
+      "desc": "Implementasi dark mode dengan localStorage agar preferensi pengguna tersimpan."
+    }
+  ]
+}
