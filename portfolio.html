@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Student Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | My Works</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Student Portfolio</div>
-    <nav class="topnav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <button id="darkModeToggle">🌙</button>
-  </header>
+    <header>
+        <div class="logo"><h2>🌸 MySpace</h2></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle" class="btn">🌙 Mode</button>
+    </header>
 
-  <main>
-    <section id="portfolio">
-  <h2>My Projects</h2>
-  <div id="portfolioList">
-    <div class="project-card">
-      <h3>Website Portfolio</h3>
-      <p>Website pribadi menggunakan HTML, CSS, dan JavaScript.</p>
-    </div>
-    <div class="project-card">
-      <h3>Data Viewer</h3>
-      <p>Aplikasi menampilkan data JSON secara dinamis.</p>
-    </div>
-    <div class="project-card">
-      <h3>CRUD App</h3>
-      <p>Mini project sistem tambah, edit, hapus data.</p>
-    </div>
-  </div>
-  <div class="project-card">
-  <h3>Responsive Landing Page</h3>
-  <p>Halaman landing modern dengan Flexbox dan Grid, mobile-friendly.</p>
-</div>
-<div class="project-card">
-  <h3>Form Validation Project</h3>
-  <p>Form interaktif dengan validasi input dan penyimpanan data ke JSON.</p>
-</div>
-<div class="project-card">
-  <h3>Dark Mode Toggle</h3>
-  <p>Implementasi dark mode dengan localStorage agar preferensi pengguna tersimpan.</p>
-</div>
+    <main class="container">
+        <h1>Koleksi Project 📁</h1>
+        <input type="text" id="searchBar" placeholder="Cari nama project..." style="max-width:400px; margin-top:20px;">
+        <div id="project-container" class="grid-container"></div>
+    </main>
 
-</section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tujuan Project</h4>
+                <p>Tugas Mini Project Pemrograman Web XI RPL.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Fitur</h4>
+                <p>Dark Mode, Fetch JSON, & Responsive.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 [Nama Kamu]. Dibuat dengan 💖</p>
+        </div>
+    </footer>
 
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Student Portfolio</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>window.onload = loadProjects;</script>
 </body>
 </html>
