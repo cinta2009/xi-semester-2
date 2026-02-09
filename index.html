@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Student Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Cute Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Student Portfolio</div>
-    <nav class="topnav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <button id="darkModeToggle">🌙</button>
-  </header>
+    <header>
+        <div class="logo"><h2>🌸 MySpace</h2></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" class="btn">🌙 Mode</button>
+    </header>
 
-  <main>
-    <section id="profile">
-      <h2>Profile</h2>
-      <article>
-        <img src="WhatsApp Image 2025-05-26 at 14.45.43_308eefd5.jpg" alt="Profile Picture" class="profile-img">
-        <p>Halo, saya Cinta. Siswa kelas XI RPL yang sedang belajar web programming.</p>
-      </article>
-    </section>
+    <main class="container">
+        <img src="img/foto-kamu.jpg" alt="Foto Profil" style="width:180px; height:180px; border-radius:50%; border:8px solid var(--white); object-fit: cover;">
+        <h1 style="margin-top:20px;">Halo, Aku [Nama Kamu]! ✨</h1>
+        <p>Siswa Kelas XI RPL yang suka bikin hal-hal lucu di web.</p>
+        <br>
+        <a href="portfolio.html"><button class="btn">Lihat Karyaku 🎨</button></a>
+    </main>
 
-    <section id="welcome">
-  <h2>Welcome</h2>
-  <p>Selamat datang di Student Portfolio saya. 
-     Di sini saya membagikan project, pengalaman belajar, dan karya kreatif 
-     selama di kelas XI RPL.</p>
-  <a href="portfolio.html" class="btn">Lihat Portfolio</a>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML, CSS, JavaScript</li>
-    <li>CRUD & Web Programming</li>
-    <li>UI/UX Design sederhana</li>
-  </ul>
-</section>
-
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="carousel">
-        <button class="prev">&#10094;</button>
-        <div class="carousel-images">
-          <img src="WhatsApp Image 2025-05-26 at 14.45.43_308eefd5.jpg" alt="Project 1" class="active">
-          <img src="assets/images/img2.jpg" alt="Project 2">
-          <img src="assets/images/img3.jpg" alt="Project 3">
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tujuan Project</h4>
+                <p>Tugas Mini Project Pemrograman Web XI RPL.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Fitur</h4>
+                <p>Dark Mode, Fetch JSON, & Responsive.</p>
+            </div>
         </div>
-        <button class="next">&#10095;</button>
-      </div>
-    </section>
-    
-  </main>
+        <div class="footer-bottom">
+            <p>&copy; 2026 [Nama Kamu]. Dibuat dengan 💖</p>
+        </div>
+    </footer>
 
-  <footer>
-    <p>&copy; 2026 Student Portfolio & Data Viewer</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
