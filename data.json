@@ -1,28 +1,38 @@
-{
-  "projects": [
+[
+  {
+    "title": "Website Portfolio",
+    "desc": "Website pribadi menggunakan HTML, CSS, dan JavaScript untuk menampilkan profil.",
+    "image": "https://via.placeholder.com/300x180/ffb7c5/ffffff?text=Portfolio",
+    "category": "Web Design"
+  },
+  {
+    "title": "Data Viewer",
+    "desc": "Aplikasi sederhana untuk menampilkan data JSON secara dinamis.",
+    "image": "https://via.placeholder.com/300x180/c1e1c1/ffffff?text=Data+Viewer",
+    "category": "Javascript"
+  },
     {
-      "title": "Website Portfolio",
-      "desc": "Website pribadi menggunakan HTML, CSS, dan JavaScript untuk menampilkan profil dan karya."
-    },
-    {
-      "title": "Data Viewer",
-      "desc": "Aplikasi sederhana untuk menampilkan data JSON secara dinamis dengan manipulasi DOM."
-    },
-    {
-      "title": "CRUD App",
-      "desc": "Mini project sistem tambah, edit, hapus data menggunakan JavaScript."
-    },
-    {
-      "title": "Responsive Landing Page",
-      "desc": "Desain halaman landing modern dengan Flexbox dan Grid, mobile-friendly."
-    },
-    {
-      "title": "Form Validation Project",
-      "desc": "Form interaktif dengan validasi input dan penyimpanan data ke JSON."
-    },
-    {
-      "title": "Dark Mode Toggle",
-      "desc": "Implementasi dark mode dengan localStorage agar preferensi pengguna tersimpan."
-    }
-  ]
-}
+    "title": "CRUD App",
+    "desc": "Mini project sistem tambah, edit, hapus data menggunakan JavaScript.",
+    "image": "https://via.placeholder.com/300x180/b2cefe/ffffff?text=CRUD+App",
+    "category": "Web App"
+  },
+  {
+    "title": "Responsive Landing Page",
+    "desc": "Desain halaman landing modern dengan Flexbox dan Grid.",
+    "image": "https://via.placeholder.com/300x180/ff8fa3/ffffff?text=Landing+Page",
+    "category": "Frontend"
+  },
+  {
+    "title": "Form Validation Project",
+    "desc": "Form interaktif dengan validasi input dan penyimpanan data.",
+    "image": "https://via.placeholder.com/300x180/74b9ff/ffffff?text=Validation",
+    "category": "Javascript"
+  },
+  {
+    "title": "Dark Mode Toggle",
+    "desc": "Implementasi dark mode dengan localStorage agar preferensi tersimpan.",
+    "image": "https://via.placeholder.com/300x180/2d3436/ffffff?text=Dark+Mode",
+    "category": "UI/UX"
+  }
+]
