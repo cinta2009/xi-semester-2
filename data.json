@@ -1,38 +1,38 @@
 [
   {
-    "title": "Website Portfolio",
-    "desc": "Website pribadi menggunakan HTML, CSS, dan JavaScript untuk menampilkan profil.",
-    "image": "https://via.placeholder.com/300x180/ffb7c5/ffffff?text=Portfolio",
-    "category": "Web Design"
+    "title": "Website portal situs",
+    "desc": "Website portal situs yang bisa mengunjungi berbagai link penting seperti media sosial, dan lainnya.",
+    "image": "assets/portal.png",
+    "category": "Web"
   },
   {
-    "title": "Data Viewer",
-    "desc": "Aplikasi sederhana untuk menampilkan data JSON secara dinamis.",
-    "image": "https://via.placeholder.com/300x180/c1e1c1/ffffff?text=Data+Viewer",
-    "category": "Javascript"
+    "title": "Daftar Hadir Guru",
+    "desc": "Aplikasi sederhana untuk guru mengabsen hadir atau tidak menggunakan py dan json.",
+    "image": "assets/daftarhadirguru.png",
+    "category": "python"
   },
     {
-    "title": "CRUD App",
-    "desc": "Mini project sistem tambah, edit, hapus data menggunakan JavaScript.",
-    "image": "https://via.placeholder.com/300x180/b2cefe/ffffff?text=CRUD+App",
-    "category": "Web App"
+    "title": "Pendaftaran Pendaftaran BPJS",
+    "desc": "website yang bisa mengisi daftar peserta BPJS secara gratis supaya bisa membantu masyarakat yang ingin mendaftar BPJS dengan mudah.",
+    "image": "assets/pendaftaranbpjs.png",
+    "category": "Web"
   },
   {
-    "title": "Responsive Landing Page",
-    "desc": "Desain halaman landing modern dengan Flexbox dan Grid.",
-    "image": "https://via.placeholder.com/300x180/ff8fa3/ffffff?text=Landing+Page",
-    "category": "Frontend"
+    "title": "Desain Landing Page",
+    "desc": "website yang menampilkan berbagai macam informasi tentang suatu produk atau layanan dengan desain yang menarik dan mudah digunakan.",
+    "image": "assets/multimedia.png",
+    "category": "web"
   },
   {
-    "title": "Form Validation Project",
-    "desc": "Form interaktif dengan validasi input dan penyimpanan data.",
-    "image": "https://via.placeholder.com/300x180/74b9ff/ffffff?text=Validation",
-    "category": "Javascript"
+    "title": "Fashion Shop",
+    "desc": "website yang menjual berbagai macam pakaian dengan desain yang menarik dan mudah digunakan.",
+    "image": "assets/shopeeshop.png",
+    "category": "web"
   },
   {
-    "title": "Dark Mode Toggle",
-    "desc": "Implementasi dark mode dengan localStorage agar preferensi tersimpan.",
-    "image": "https://via.placeholder.com/300x180/2d3436/ffffff?text=Dark+Mode",
-    "category": "UI/UX"
+    "title": "Dashboard Ayam",
+    "desc": "website yang menampilkan berbagai macam informasi tentang ayam seperti jenis, harga, dan lainnya dengan desain yang menarik.",
+    "image": "assets/dasboardayam.png",
+    "category": "web"
   }
 ]
