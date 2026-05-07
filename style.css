@@ -161,13 +161,9 @@ footer {
     gap: 50px;
     margin-bottom: 15px;
 }
-
-.footer-section h4 { margin-bottom: 5px; font-size: 1rem; }
-.footer-section p { font-size: 0.85rem; opacity: 0.9; }
-
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 10px;
+    padding-top: 1px;
     font-size: 0.8rem;
 }
 
@@ -181,4 +177,29 @@ footer {
 @media (max-width: 480px) {
     .container { padding: 30px 5%; }
     .grid-container { grid-template-columns: 1fr; }
+}
+
+/* Tambahkan ke style.css kamu */
+.tag {
+    background: var(--secondary-color);
+    color: #4a4a4a;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: left;
+}
+
+#searchBar {
+    border: 2px solid var(--primary-color);
+    transition: 0.3s;
+}
+
+#searchBar:focus {
+    box-shadow: 0 0 10px var(--primary-color);
 }
