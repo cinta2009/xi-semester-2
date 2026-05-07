@@ -1,64 +1,76 @@
-// 1. Ambil Data dari JSON (Poin 5b)
+// 1. Ambil Data dari JSON
 async function loadProjects() {
     const container = document.getElementById('project-container');
+    const searchBar = document.getElementById('searchBar');
     if(!container) return;
 
     try {
+        // Mengambil data dari data.json
         const response = await fetch('data.json');
         const data = await response.json();
+        
+        // Tampilkan semua data saat pertama kali load
         renderCards(data);
 
-        // Fitur Search (Poin 5c)
-        document.getElementById('searchBar').addEventListener('input', (e) => {
-            const filtered = data.filter(p => p.title.toLowerCase().includes(e.target.value.toLowerCase()));
-            renderCards(filtered);
-        });
+        // Fitur Search
+        if(searchBar) {
+            searchBar.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filtered = data.filter(p => 
+                    p.title.toLowerCase().includes(searchTerm) || 
+                    p.category.toLowerCase().includes(searchTerm)
+                );
+                renderCards(filtered);
+            });
+        }
     } catch (err) {
-        container.innerHTML = "<p>Gagal mengambil data JSON :(</p>";
+        console.error("Detail Error:", err);
+        container.innerHTML = `<p style="color:red;">Gagal mengambil data JSON. Pastikan file 'data.json' tersedia.</p>`;
     }
 }
 
 function renderCards(data) {
     const container = document.getElementById('project-container');
+    if (data.length === 0) {
+        container.innerHTML = "<p>Project tidak ditemukan...</p>";
+        return;
+    }
+
     container.innerHTML = data.map(p => `
         <div class="card">
-            <img src="${p.image}" alt="project">
-            <h3 style="margin:15px 0; color:var(--primary);">${p.title}</h3>
-            <p>${p.desc}</p>
-            <small><b>Tag:</b> ${p.category}</small>
+            <img src="${p.image || 'https://via.placeholder.com/300x180'}" alt="${p.title}">
+            <div class="card-body">
+                <h3 style="margin:15px 0; color:var(--primary-color);">${p.title}</h3>
+                <p style="font-size: 0.9rem; margin-bottom:10px;">${p.desc}</p>
+                <span class="tag">#${p.category}</span>
+            </div>
         </div>
     `).join('');
 }
 
-// 2. Dark Mode & LocalStorage (Poin 6c)
+// 2. Dark Mode & LocalStorage
 const darkBtn = document.getElementById('dark-mode-toggle');
 if(darkBtn) {
     darkBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark-theme');
-        const mode = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-        localStorage.setItem('theme', mode);
+        const isDark = document.body.classList.contains('dark-theme');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        darkBtn.textContent = isDark ? '☀️ Light' : '🌙 Dark';
     });
 }
 
+// Cek tema saat halaman dimuat
 if(localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-theme');
+    if(darkBtn) darkBtn.textContent = '☀️ Light';
 }
 
-// 3. Validasi Form (Poin 5a)
+// 3. Validasi Form Contact
 const form = document.getElementById('contactForm');
 if(form) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert("Pesan terkirim! Terima kasih sudah mampir ✨");
+        alert("Pesan terkirim! Terima kasih sudah mampir Cinta ✨");
         form.reset();
     });
 }
-// Animasi tambahan saat tombol diklik (Poin 6b)
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('mousedown', () => {
-        button.style.transform = 'scale(0.95)';
-    });
-    button.addEventListener('mouseup', () => {
-        button.style.transform = 'scale(1.05)';
-    });
-});
